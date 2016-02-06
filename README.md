@@ -1,9 +1,33 @@
 The connection between GitHub's CDN ["Fastly"](https://www.fastly.com/) (*.githubusercontent.com, *.github.io) and GitHub's origin server is not encrypted!
-
 ```
 wget https://github.com/m3t/id/archive/master.zip
 ```
-
 ```
 git clone https://github.com/m3t/id.git
+```
+
+### `0xF9FFABDF`
+Manually merged details about my OpenPGP key:
+```
+gpg2 --with-fingerprint --with-fingerprint --list-secret-keys 0xF9FFABDF
+gpg2 --edit-key 0xF9FFABDF
+```
+
+```
+sec#  4096R/0xF9FFABDF  created: 2016-01-22  usage: SCE
+      Key fingerprint = 10D6 9602 7B29 E965 76F9  EB6A 30C1 B8AA F9FF ABDF
+uid   mlt posteo de (offline master key w/ subkeys on smartcard; see policy url) <mlt posteo de>
+ssb>  2048R/0x6D8AF299  created: 2016-01-22  usage: S
+      Key fingerprint = 8E89 A514 F835 DCB6 1503  DEE7 ACED 06F5 6D8A F299
+ssb>  2048R/0x5AE7402E  created: 2016-01-22  usage: E
+      Key fingerprint = 02A4 FE3F CD9E B1A0 901F  3586 4284 6DA1 5AE7 402E
+ssb>  2048R/0xB2ACE772  created: 2016-01-22  usage: A
+      Key fingerprint = 0DC8 A2A5 D687 BD9A A22A  536A E4EE 6458 B2AC E772
+
+(E=encryption, S=signing, C=certification, A=authentication)
+```
+
+Show policy URL and notations:
+```
+gpg2 --list-options show-policy-urls,show-notations --list-sigs 0xF9FFABDF
 ```
