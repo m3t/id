@@ -6,6 +6,11 @@ wget https://github.com/m3t/id/archive/master.zip
 git clone https://github.com/m3t/id.git
 ```
 
+> It would be better to retrieve my OpenPGP key from a DNS record which is validated [using DNSSEC](https://github.com/m3t/integrity-trust#dnssec).
+```
+openpgp-fetch "<e-mail address>" | gpg2 --with-fingerprint
+```
+
 ### `0xF9FFABDF`
 Manually merged details about my OpenPGP key:
 ```
