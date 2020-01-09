@@ -1,3 +1,7 @@
+## Retrieve key
+
+### GitHub
+
 The connection between GitHub's CDN ["Fastly"](https://www.fastly.com/) (*.githubusercontent.com, *.github.io) and GitHub's origin server is not encrypted!
 ```
 wget https://github.com/m3t/id/archive/master.zip
@@ -6,12 +10,20 @@ wget https://github.com/m3t/id/archive/master.zip
 git clone https://github.com/m3t/id.git
 ```
 
+### DNS record OPENPGPKEY
+
 > It would be better to retrieve my OpenPGP key from a DNS record which is validated [using DNSSEC](https://github.com/m3t/integrity-trust#dnssec).
+
+```
+gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate dane --locate-keys "<e-mail address>"
+```
+
 ```
 openpgp-fetch "<e-mail address>" | gpg2 --with-fingerprint
 ```
 
-### `0xF9FFABDF`
+
+## `0xF9FFABDF`
 Manually merged details about my OpenPGP key:
 ```
 gpg2 --with-fingerprint --with-fingerprint --list-secret-keys 0xF9FFABDF
