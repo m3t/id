@@ -4,6 +4,10 @@
 
 https://keys.openpgp.org/vks/v1/by-fingerprint/10D696027B29E96576F9EB6A30C1B8AAF9FFABDF
 
+```
+https://keys.openpgp.org/search?q=<e-mail address>
+```
+
 #### Restraints
 
 * [Kuketz 2019-06](https://www.kuketz-blog.de/keys-openpgp-org-gnupg-schluesselserver-mit-e-mail-verifikation/)
@@ -18,6 +22,16 @@ wget https://github.com/m3t/id/archive/master.zip
 ```
 ```
 git clone https://github.com/m3t/id.git
+```
+
+### Keybase.io
+
+Not up to date!
+
+### Webserver
+
+```
+https://posteo.de/keys/<e-mail address>
 ```
 
 ### Web Key Directory
