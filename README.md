@@ -29,13 +29,13 @@ git clone https://github.com/m3t/id.git
 gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate wkd --locate-keys "<e-mail address>"
 ```
 
-### DNS record OPENPGPKEY
+### DNS record OPENPGPKEY with DNSSEC
 
 * https://userforum.mailbox.org/topic/pgp-key-im-dns-hinterlegen-openpgpkey
 * https://openpgpkey.info
 * https://gist.github.com/kafene/0a6e259996862d35845784e6e5dbfc79
-
-> It would be better to retrieve my OpenPGP key from a DNS record which is validated [using DNSSEC](https://github.com/m3t/integrity-trust#dnssec).
+* https://blog.webernetz.net/pgp-key-distribution-via-dnssec-openpgpkey/
+* https://github.com/m3t/integrity-trust#dnssec
 
 ```
 gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate dane --locate-keys "<e-mail address>"
