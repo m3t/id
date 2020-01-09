@@ -1,5 +1,15 @@
 ## Retrieve key
 
+### Keyserver
+
+https://keys.openpgp.org/vks/v1/by-fingerprint/10D696027B29E96576F9EB6A30C1B8AAF9FFABDF
+
+#### Restraints
+
+* [Kuketz 2019-06](https://www.kuketz-blog.de/keys-openpgp-org-gnupg-schluesselserver-mit-e-mail-verifikation/)
+* [Heise 2019-07](https://www.heise.de/security/meldung/Angriff-auf-PGP-Keyserver-demonstriert-hoffnugslose-Situation-4458354.html)
+* [Heise 2019-06](https://www.heise.de/security/meldung/Neuer-OpenPGP-Keyserver-liefert-endlich-verifizierte-Schluessel-4450814.html)
+
 ### GitHub
 
 The connection between GitHub's CDN ["Fastly"](https://www.fastly.com/) (*.githubusercontent.com, *.github.io) and GitHub's origin server is not encrypted!
