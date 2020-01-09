@@ -50,6 +50,7 @@ gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate wkd --locate
 * https://gist.github.com/kafene/0a6e259996862d35845784e6e5dbfc79
 * https://blog.webernetz.net/pgp-key-distribution-via-dnssec-openpgpkey/
 * https://github.com/m3t/integrity-trust#dnssec
+* https://www.heise.de/ct/artikel/Hoster-und-Registrare-mit-DNSSEC-Diensten-2643530.html
 
 ```
 gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate dane --locate-keys "<e-mail address>"
