@@ -20,7 +20,20 @@ wget https://github.com/m3t/id/archive/master.zip
 git clone https://github.com/m3t/id.git
 ```
 
+### Web Key Directory
+
+* https://www.kuketz-blog.de/gnupg-web-key-directory-wkd-einrichten/
+* https://forum.kuketz-blog.de/viewtopic.php?t=3420
+
+```
+gpg2 --no-default-keyring --keyring /tmp/gpg-temp --auto-key-locate wkd --locate-keys "<e-mail address>"
+```
+
 ### DNS record OPENPGPKEY
+
+* https://userforum.mailbox.org/topic/pgp-key-im-dns-hinterlegen-openpgpkey
+* https://openpgpkey.info
+* https://gist.github.com/kafene/0a6e259996862d35845784e6e5dbfc79
 
 > It would be better to retrieve my OpenPGP key from a DNS record which is validated [using DNSSEC](https://github.com/m3t/integrity-trust#dnssec).
 
