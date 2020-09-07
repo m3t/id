@@ -1,5 +1,22 @@
 ## Retrieve key
 
+* [Qubes OS . What does it mean to “distrust the infrastructure”?](https://www.qubes-os.org/faq/#what-does-it-mean-to-distrust-the-infrastructure)
+* [Qubes OS . On Digital Signatures and Key Verification](https://www.qubes-os.org/security/verifying-signatures/)
+* [Qubes OS . Trusting Trust](https://www.qubes-os.org/doc/install-security/#verifying-the-qubes-iso)
+
+Once you have obtained the key, you should verify the fingerprint of this key very carefully by obtaining copies of the fingerprint from multiple independent sources and comparing them to the downloaded key’s fingerprint to ensure they match. Here are some ideas:
+
+* Use the PGP Web of Trust.
+* Check the key against different __keyservers__.
+* Use different __search engines__ to search for the fingerprint.
+* Use __Tor__ to view and search for the fingerprint on various websites.
+* Use various __VPNs and proxy servers__.
+* Use different Wi-Fi networks (work, school, internet cafe, etc.).
+* Ask people to post the fingerprint in various forums and chat rooms.
+* Check against PDFs and photographs in which the fingerprint appears (e.g., slides from a talk or on a T-shirt).
+* __Repeat all of the above from different computers and devices.__
+
+
 ### Keyserver
 
 https://keys.openpgp.org/vks/v1/by-fingerprint/10D696027B29E96576F9EB6A30C1B8AAF9FFABDF
